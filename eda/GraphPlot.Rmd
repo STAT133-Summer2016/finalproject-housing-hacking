@@ -99,12 +99,28 @@ names(Price_to_Rent_plt) = primary
 Foreclosure_test_data=filter(bubble_data,Type=='HF')
 foreclosure_plt=list()
 for(i in 1:length(primary)){
-  temp = ggplot(filter(Foreclosure_test_data,County == ignore.case(primary[i])),aes(x=Date,y=Value,color=City)) +
+  temp = ggplot(filter(Foreclosure_test_data,County == primary[i]),aes(x=Date,y=Value,color=City)) +
     geom_smooth() +
-    geom_line()
+    geom_line()+
+    labs(title="Foreclosure Rate", x = "Date",y ="Foreclosure Rate per 10,000 Homes")
   foreclosure_plt[[i]] = temp
 }
 names(foreclosure_plt)=primary
+
+#The plots of Estimated Rent for All homes
+#Param:
+#     Estimated_Rent_plt: list, saving all the plots of each county
+#X axis : Year 2011-2014
+#Y axis : Estimated Monthly Rent
+Estimated_Rent_test_data=filter(bubble_data,Type=='RAH')
+Estimated_Rent_plt=list()
+for(i in 1:length(primary)){
+  temp = ggplot(filter(Estimated_Rent_test_data,County == primary[i]),aes(x=Date,y=Value,color=City)) +
+    geom_line()+
+    labs(title="Estimated Rent for All Homes", x = "Date",y ="Estimated Monthly Rent")
+  Estimated_Rent_plt[[i]] = temp
+}
+names(Estimated_Rent_plt)=primary
 
 #The plots of Median Rent value
 #Param:

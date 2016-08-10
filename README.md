@@ -8,3 +8,5 @@
 [sample2](https://docs.google.com/file/d/0B1Q0W6RJqTWHUkllX3g0WjQycGs/edit?pli=1)
 ## Apps
 [map](https://jeromexlee.shinyapps.io/map_graph/)  
+##Creating the Final Paper
+#In order to create the final paper you go to the "paper" folder and knit the RMD document. Variables are assigned by relative paths from the "paper" folder to the other folders in the document
