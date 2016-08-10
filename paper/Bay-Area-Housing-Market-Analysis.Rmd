@@ -54,8 +54,8 @@ primary = c("alameda","contra costa","san mateo","marin","napa","sacramento","sa
 ## 3.	Analysis and Data Visualizations  
 
 * 3.1 Identifying major factors affecting housing price
-* 3.2 Compare and analysis the trend of data changes during past two decades 
-* 3.3 Special case analysis
+* 3.2 Comparing and Analyzing Housing Market Trends from the Past Two Decades
+* 3.3 Special Case Analysis
 * 3.4 Bubble App
 
 ## 4.	Limitations and Further Questions: 
@@ -157,7 +157,7 @@ Price_to_Rent_plt[[6]]
 
 
 
-## 3.2 Comparisons and Analysis of Housing Market trends during Past Two Decades
+## 3.2 Comparing and Analyzing Housing Market Trends from the Past Two Decades
 
 ###Shiny Map Application(https://jeromexlee.shinyapps.io/map_graph/)
 
@@ -260,11 +260,11 @@ Estimated_Rent_plt[[1]]
 
 Estimated rent is one of the most interesting variables to observe in relation to income. We plotted Average Estimated Rent in San Francisco because it has experienced the most meteoritic of rises in  over the last four years, growing from an average of 2500 in 2011 to 4000 in 2014, a 60% rise. You can see the prices of other housing markets in the Bay Area also begin to rise during late 2013-2014. One of the reasons for this is that prospective renters and buyers might have been priced out of the San Francisco market and flowed into other housing markets, increasing the demand in these outside markets and increasing prices.
 
-##Bubble_App
+## 3.4 Bubble_App
 
 _Bubble Data App. This app captures a more intimate picture of the relationships of Population or Income with different Types included from the cleaned bubble Data Set, allowing the user to also observe such trends by county._ 
 
-##Link to Bubble_data App(https://jeromexlee.shinyapps.io/bubble/) 
+##Link to Bubble_data App(https://jeromexlee.shinyapps.io/bubble/)
 
 # 4. Limitations and Further Questions:
 
